@@ -84,10 +84,22 @@ a {
 table.body-wrap {
 	width: 100%;
 	padding: 20px;
+	background: #ccc;
 }
 
 table.body-wrap .container {
 	border: 1px solid #f0f0f0;
+}
+
+
+
+/* -------------------------------------
+		HEADER
+-------------------------------------- */
+.header {
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #f0f0f0;
 }
 
 
@@ -133,7 +145,7 @@ h3 {
 	font-size: 22px;
 }
 
-p, ul, ol {
+p, ul, ol, table {
 	margin-bottom: 10px;
 	font-weight: normal;
 	font-size: 14px;
@@ -142,6 +154,30 @@ p, ul, ol {
 ul li, ol li {
 	margin-left: 5px;
 	list-style-position: inside;
+}
+
+.table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+
+th {
+	text-align: left;
+}
+
+.table>thead>tr>th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ddd;
+}
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>thead>tr>td, .table>tbody>tr>td {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
 }
 
 /* ---------------------------------------------------
@@ -187,25 +223,104 @@ ul li, ol li {
 
 			<!-- content -->
 			<div class="content">
+			<table class="header">
+				<tr>
+					<td>
+						<img src="http://dev-subway2go.sites.ionline.ca/wp-content/uploads/2014/10/Subway-Logo-Transparent-small.png" alt="Subway2Go" />
+						
+					</td>
+				</tr>
+			</table>
 			<table>
 				<tr>
 					<td>
-						<p>Hi there,</p>
-						<p>Sometimes all you want is to send a simple HTML email with a basic design.</p>
-						<h1>Really simple HTML email template</h1>
-						<p>This is a really simple email template. It's sole purpose is to get you to click the button below.</p>
-						<h2>How do I use it?</h2>
-						<p>All the information you need is on GitHub.</p>
-						<table>
-							<tr>
-								<td class="padding">
-									<p><a href="https://github.com/leemunroe/html-email-template" class="btn-primary">View the source and instructions on GitHub</a></p>
-								</td>
-							</tr>
+						<p>Hi ,</p>
+						<p>Thank you for your catering order. We will contact with you as soon as possible.</p>
+						<h3>Order Reference</h3>
+						<table class="table">
+							<thead>
+								<tr>
+									<th width="">Item Name</th>
+									<th width="1%"></th>
+									<th width="20%">Quantity</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>6 Foot Sub</td>
+									<td>:</td>
+									<td> 1</td>
+								</tr>
+								<tr>
+									<td>12-inch sub</td>
+									<td>:</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>CLASSIC COMBO Platter</td>
+									<td>:</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Dessert Platter</td>
+									<td>:</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Assortment of bottled Coca- Cola products</td>
+									<td>:</td>
+									<td>4</td>
+								</tr>
+								<tr>
+									<td>Chips</td>
+									<td>:</td>
+									<td>4</td>
+								</tr>
+							</tbody>
 						</table>
-						<p>Feel free to use, copy, modify this email template as you wish.</p>
-						<p>Thanks, have a lovely day.</p>
-						<p><a href="http://twitter.com/leemunroe">Follow @leemunroe on Twitter</a></p>
+
+						<br/><br/>
+						<h3>Contact Information</h3>
+						<table class="table">
+							<tbody>
+								<tr>
+									<th>Customer Name </th>
+									<td>Mr. Abdullah Al Jahid</td>
+								</tr>
+								<tr>
+									<th>Email</th>
+									<td>abdullah.al.jahid@gmail.com</td>
+								</tr>
+								<tr>
+									<th>Time</th>
+									<td>20</td>
+								</tr>
+								<tr>
+									<th>Telephone</th>
+									<td>01724707969</td>
+								</tr>
+								<tr>
+									<th>Date</th>
+									<td>20</td>
+								</tr>
+								<tr>
+									<th>Party Size</th>
+									<td>4</td>
+								</tr>
+								<tr>
+									<th>Store</th>
+									<td>Delivery</td>
+								</tr>
+								<tr>
+									<th>Delivery Address</th>
+									<td>494, Senpara Parbata Mirpur</td>
+								</tr>
+								<tr>
+									<th>Special Request</th>
+									<td>Nothing special</td>
+								</tr>
+							</tbody>
+						</table>
 					</td>
 				</tr>
 			</table>
